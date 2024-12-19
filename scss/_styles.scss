@@ -1,0 +1,199 @@
+@include mymixin;
+.main{
+    background-image: url("../imgs/q_70.jpg");
+    background-position: center;
+    width: 100%;
+    background-size: cover;
+    background-color: black;
+    height: 600px;
+    background-repeat: no-repeat;
+    padding: 0 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .first{
+        transform: rotate(180deg);
+    }
+    .info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
+        h1{
+            width: 684px;
+            color: #FFF;
+
+            text-align: center;
+            font-family: judson;
+            font-size: 70px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+        button{
+            width: 127px;
+            height: 48px;
+            border: none;
+            color: #FFF;
+            border-radius: 8px;
+            background: rgb(99, 112, 81);
+            &:hover{
+                background-color: rgb(77, 87, 65);
+            }
+        }
+    }
+}
+.product{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 942px;
+    justify-content: space-around;
+
+    .name{
+        display: flex;
+        align-items: center;
+        column-gap: 13px;
+
+        .line2{
+            width: 253px;
+            height: 1px;
+            background-color: black;
+        }
+        h1{
+            color: #000;
+            font-family: "Kaisei Decol";
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+    }
+    .goods{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        
+        .child{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 40px;
+            h1{
+                color: #000;
+
+                font-family: JejuMyeongjo;
+                font-size: 32px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                
+            }
+        }
+        .first{
+            
+        }
+        .last{
+            transform: rotate(180deg);
+        }
+    }
+    button{
+        color: #FFF;
+        width: 235px;
+        height: 60px;
+        border-radius: 5px;
+        background: rgb(11, 37, 56);
+        font-family: JejuMyeongjo;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        border: none;
+        &:hover{
+            background-color: rgb(13, 36, 53);
+        }
+    }
+}
+
+.lastsection{
+    background-image: url("../imgs/Campfire-on-Steens-Mountain-hero-John-Waller.webp");
+    width: 100%;
+    height: 615px;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    div{   
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 30px;
+        h1{
+            color: #FFF;
+            width: 405px;
+            text-align: center;
+            font-family: Judson;
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+        button{
+            width: 241.446px;
+            height: 60px;
+            flex-shrink: 0;
+            border-radius: 5px;
+            background: #19364A;
+            color: #FFF;
+
+            font-family: Jomolhari;
+            font-size: 25px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            border: none;
+            &:hover{
+                background-color: #142b3a;
+            }
+        }
+    }
+
+}
+
+.pseudofooter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #273A47;
+    height: 333px;
+    row-gap: 30px;
+    flex-direction: column;
+    width: 100%;
+    h1{
+        width: 1140px;
+        height: 45px;
+        flex-shrink: 0;
+        color: #FFF;        
+        text-align: center;
+        font-family: Karma;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        
+    }
+
+    h2{
+        color: #ffffff;
+        font-family: "Kaisei Decol";
+        font-size: 32px;
+        font-style: normal;
+        margin-right:50px;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 60px;
+    }
+}

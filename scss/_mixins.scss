@@ -1,0 +1,56 @@
+@mixin mymixin {
+    header{
+        height: 136px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        .logo{
+            display: flex;
+            column-gap: 10px;
+            align-items: center;
+            .line{
+                width: 1px;
+                height: 40px;
+                background-color: black;
+            }
+            h1{
+                color: #000;
+                font-family: "Kaisei Decol";
+                font-size: 32px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+        }
+        nav{
+            display: flex;
+            width: 320px;
+            justify-content: space-between;
+            h2{
+                color: #000;
+                font-family: JejuMyeongjo;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+        }
+        .search{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            input{
+                width: 188px;
+                height: 21px;
+                border: none;
+                border-radius: 40px;
+                background: rgba(217, 217, 217, 0.50);
+            }
+        }
+        .icons{
+            width: 100px;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
