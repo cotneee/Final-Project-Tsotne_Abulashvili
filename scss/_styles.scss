@@ -169,7 +169,7 @@
     align-items: center;
     background: #273A47;
     height: 333px;
-    row-gap: 30px;
+    
     flex-direction: column;
     width: 100%;
     h1{
@@ -186,14 +186,6 @@
         
     }
 
-    h2{
-        color: #ffffff;
-        font-family: "Kaisei Decol";
-        font-size: 32px;
-        font-style: normal;
-        margin-right:50px;
-        font-weight: 400;
-        line-height: normal;
-        margin-bottom: 60px;
-    }
 }
+
+@include myfooter;

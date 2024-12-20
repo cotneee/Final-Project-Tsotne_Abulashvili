@@ -362,7 +362,6 @@ header .icons {
           align-items: center;
   background: #273A47;
   height: 333px;
-  row-gap: 30px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -382,13 +381,311 @@ header .icons {
   font-weight: 400;
   line-height: normal;
 }
-.pseudofooter h2 {
-  color: #ffffff;
+
+footer {
+  background-color: rgb(228, 228, 228);
+  width: 100%;
+  height: 430PX;
+}
+footer .padding {
+  padding: 26px 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+}
+footer .padding .upper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+footer .padding .upper .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+footer .padding .upper .left .group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 12px;
+  margin-left: 16px;
+}
+footer .padding .upper .left .group img {
+  width: 40px;
+  height: 40px;
+}
+footer .padding .upper .left .group h2 {
+  color: #000;
   font-family: "Kaisei Decol";
   font-size: 32px;
   font-style: normal;
-  margin-right: 50px;
   font-weight: 400;
   line-height: normal;
-  margin-bottom: 60px;
+}
+footer .padding .upper .left h1 {
+  color: #000;
+  font-family: Kameron;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+footer .padding .upper .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
+}
+footer .padding .middle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+footer .padding .middle .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 10px;
+}
+footer .padding .middle .left h1 {
+  color: #000;
+  font-family: Kameron;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+footer .padding .middle .right {
+  width: 50%;
+}
+footer .padding .middle .right .contactdiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
+}
+footer .padding .middle .right .contactdiv .leftdiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 180px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+footer .padding .middle .right .contactdiv .leftdiv .upperdiv h1 {
+  color: #000;
+  font-family: "Kaushan Script";
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+footer .padding .middle .right .contactdiv .leftdiv .upperdiv .line {
+  width: 173.003px;
+  height: 1px;
+  background-color: #000;
+}
+footer .padding .middle .right .contactdiv .leftdiv .lowerdiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 9px;
+}
+footer .padding .middle .right .contactdiv .leftdiv .lowerdiv h1 {
+  color: #000;
+  font-family: Kameron;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+footer .padding .middle .right .contactdiv .rightdiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 180px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+footer .padding .middle .right .contactdiv .rightdiv .upperdiv h1 {
+  color: #000;
+  font-family: "Kaushan Script";
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+footer .padding .middle .right .contactdiv .rightdiv .upperdiv .line {
+  width: 173.003px;
+  height: 1px;
+  background-color: #000;
+}
+footer .padding .middle .right .contactdiv .rightdiv .lowerdiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 9px;
+}
+footer .padding .middle .right .contactdiv .rightdiv .lowerdiv h1 {
+  color: #000;
+  font-family: Kameron;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+footer .padding .lower {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+footer .padding .lower .left {
+  -webkit-column-gap: 10px;
+     -moz-column-gap: 10px;
+          column-gap: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+footer .padding .lower .left h1 {
+  color: #000;
+  font-family: Kameron;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+footer .padding .lower .right {
+  width: 46%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 10px;
+     -moz-column-gap: 10px;
+          column-gap: 10px;
+}
+footer .padding .lower .right input {
+  width: 339px;
+  height: 40px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  border-radius: 12px;
+  border: 1px solid #000;
+  background: #FFF;
+}
+footer .padding .lower .right input::-webkit-input-placeholder {
+  color: #000;
+  font-family: Karma;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+footer .padding .lower .right input::-moz-placeholder {
+  color: #000;
+  font-family: Karma;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+footer .padding .lower .right input:-ms-input-placeholder {
+  color: #000;
+  font-family: Karma;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+footer .padding .lower .right input::-ms-input-placeholder {
+  color: #000;
+  font-family: Karma;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+footer .padding .lower .right input::placeholder {
+  color: #000;
+  font-family: Karma;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+footer .padding .lower .right button {
+  border-radius: 12px;
+  background: #273A47;
+  color: #FFF;
+  font-family: Karma;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }/*# sourceMappingURL=global.css.map */
