@@ -189,6 +189,7 @@ header .icons {
   line-height: normal;
 }
 .main .info button {
+  cursor: pointer;
   width: 127px;
   height: 48px;
   border: none;
@@ -275,6 +276,7 @@ header .icons {
           transform: rotate(180deg);
 }
 .product button {
+  cursor: pointer;
   color: #FFF;
   width: 235px;
   height: 60px;
@@ -332,6 +334,7 @@ header .icons {
   line-height: normal;
 }
 .lastsection div button {
+  cursor: pointer;
   width: 241.446px;
   height: 60px;
   -ms-flex-negative: 0;
