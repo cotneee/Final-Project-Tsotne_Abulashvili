@@ -125,8 +125,8 @@ header .search {
           align-items: center;
 }
 header .search input {
-  width: 188px;
-  height: 21px;
+  width: 300px;
+  height: 29px;
   border: none;
   border-radius: 40px;
   background: rgba(217, 217, 217, 0.5);
