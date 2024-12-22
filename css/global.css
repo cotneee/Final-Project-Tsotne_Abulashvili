@@ -335,6 +335,10 @@ header .xs-icon {
   font-weight: 400;
   line-height: normal;
 }
+.product .goods .child img {
+  width: 240px;
+  height: 240px;
+}
 .product button {
   cursor: pointer;
   color: #FFF;
