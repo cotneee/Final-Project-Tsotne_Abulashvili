@@ -735,15 +735,29 @@ footer .padding .lower {
           align-items: center;
 }
 footer .padding .lower .left {
-  -webkit-column-gap: 10px;
-     -moz-column-gap: 10px;
-          column-gap: 10px;
+  -webkit-column-gap: 15px;
+     -moz-column-gap: 15px;
+          column-gap: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+footer .padding .lower .left .group1, footer .padding .lower .left .group2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-column-gap: 5px;
+     -moz-column-gap: 5px;
+          column-gap: 5px;
 }
 footer .padding .lower .left h1 {
   color: #000;
