@@ -71,6 +71,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
 }
 header .logo {
   display: -webkit-box;
@@ -140,7 +141,35 @@ header .icons {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+header .xs-icon {
+  display: none;
+}
 
+@media (max-width: 391px) {
+  header {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 62px;
+    padding: 0 20px;
+  }
+  header .logo img {
+    width: 35px;
+    height: 35px;
+  }
+  header .logo .line {
+    height: 20px;
+  }
+  header .logo h1 {
+    font-size: 9px;
+  }
+  header nav, header .search, header .icons {
+    display: none;
+  }
+  header .xs-icon {
+    display: block;
+  }
+}
 .main {
   background-image: url("../imgs/q_70.jpg");
   background-position: center;
@@ -201,6 +230,34 @@ header .icons {
   background-color: rgb(77, 87, 65);
 }
 
+@media (max-width: 391px) {
+  .main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 268px;
+  }
+  .main .info h1 {
+    font-size: 20px;
+    width: 241px;
+  }
+  .main .info button {
+    width: 89px;
+    height: 22.898px;
+    border-radius: 8px;
+    color: #FFF;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .main img {
+    display: none;
+  }
+}
 .product {
   width: 100%;
   margin-top: 100px;
@@ -214,9 +271,10 @@ header .icons {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 942px;
+  row-gap: 50px;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  padding-bottom: 100px;
 }
 .product .name {
   display: -webkit-box;
@@ -225,14 +283,16 @@ header .icons {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-column-gap: 13px;
-     -moz-column-gap: 13px;
-          column-gap: 13px;
 }
 .product .name .line2 {
   width: 253px;
   height: 1px;
   background-color: black;
+}
+@media (max-width: 840px) {
+  .product .name .line2 {
+    display: none;
+  }
 }
 .product .name h1 {
   color: #000;
@@ -251,6 +311,8 @@ header .icons {
       justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  row-gap: 47px;
+  padding-bottom: 30px;
 }
 .product .goods .child {
   display: -webkit-box;
@@ -273,11 +335,6 @@ header .icons {
   font-weight: 400;
   line-height: normal;
 }
-.product .goods .last {
-  -webkit-transform: rotate(180deg);
-      -ms-transform: rotate(180deg);
-          transform: rotate(180deg);
-}
 .product button {
   cursor: pointer;
   color: #FFF;
@@ -296,6 +353,32 @@ header .icons {
   background-color: rgb(13, 36, 53);
 }
 
+@media (max-width: 391px) {
+  .product {
+    margin-top: 42px;
+    row-gap: 40px;
+  }
+  .product .name h1 {
+    font-size: 32px;
+  }
+  .product .goods .child img {
+    width: 199px;
+    height: 199px;
+  }
+  .product .goods .child h1 {
+    font-size: 22px;
+  }
+  .product button {
+    width: 98px;
+    height: 28px;
+    color: #FFF;
+    font-family: JejuMyeongjo;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
 .lastsection {
   background-image: url("../imgs/Campfire-on-Steens-Mountain-hero-John-Waller.webp");
   width: 100%;
@@ -356,6 +439,37 @@ header .icons {
   background-color: #142b3a;
 }
 
+@media (max-width: 391px) {
+  .lastsection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 268px;
+  }
+  .lastsection div h1 {
+    color: #FFF;
+    text-align: center;
+    font-family: Judson;
+    width: 169px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .lastsection div button {
+    width: 89px;
+    height: 21px;
+    color: #FFF;
+    font-family: Jomolhari;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
 .pseudofooter {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -388,6 +502,21 @@ header .icons {
   line-height: normal;
 }
 
+@media (max-width: 391px) {
+  .pseudofooter {
+    height: 137px;
+  }
+  .pseudofooter h1 {
+    color: #FFF;
+    max-width: 331px;
+    text-align: center;
+    font-family: Karma;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
 footer {
   background-color: rgb(228, 228, 228);
   width: 100%;
@@ -501,12 +630,8 @@ footer .padding .middle .right .contactdiv {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-column-gap: 30px;
-     -moz-column-gap: 30px;
-          column-gap: 30px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 footer .padding .middle .right .contactdiv .leftdiv {
   display: -webkit-box;
@@ -694,4 +819,83 @@ footer .padding .lower .right button {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+@media (max-width: 391px) {
+  footer .padding {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    padding: 16px 12px;
+  }
+  footer .padding .upper .left h1 {
+    font-size: 12px;
+  }
+  footer .padding .upper .left .group {
+    margin-left: 9px;
+  }
+  footer .padding .upper .left .group img {
+    width: 26px;
+    height: 26px;
+  }
+  footer .padding .upper .left .group h2 {
+    font-size: 16px;
+  }
+  footer .padding .upper .right img {
+    width: 18px;
+    height: 18px;
+  }
+  footer .padding .middle .left {
+    display: none;
+  }
+  footer .padding .middle .right {
+    width: 100%;
+  }
+  footer .padding .middle .right .contactdiv {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  footer .padding .middle .right .contactdiv .leftdiv .upperdiv .line {
+    width: 150px;
+  }
+  footer .padding .middle .right .contactdiv .leftdiv .lowerdiv h1 {
+    font-size: 18px;
+  }
+  footer .padding .middle .right .contactdiv .rightdiv .upperdiv .line {
+    width: 150px;
+  }
+  footer .padding .middle .right .contactdiv .rightdiv .lowerdiv h1 {
+    font-size: 18px;
+  }
+  footer .padding .lower .left {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  footer .padding .lower .left .group1, footer .padding .lower .left .group2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-column-gap: 5px;
+       -moz-column-gap: 5px;
+            column-gap: 5px;
+    max-width: 50%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  footer .padding .lower .right {
+    display: none;
+  }
 }/*# sourceMappingURL=global.css.map */

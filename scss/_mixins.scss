@@ -4,6 +4,7 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
+        width: 100%;
         .logo{
             display: flex;
             column-gap: 10px;
@@ -52,8 +53,39 @@
             display: flex;
             justify-content: space-between;
         }
+
+        .xs-icon{
+            display: none;
+        }
+    }
+    @media(max-width: 391px){
+        header{
+            justify-content: space-between;
+            height: 62px;
+            padding: 0 20px;
+            .logo{
+                img{
+                    width: 35px;
+                    height: 35px;
+                }
+                .line{
+                    height: 20px;
+                }
+                h1{
+                    font-size: 9px;
+                }
+            }
+            nav, .search, .icons{
+                display: none;
+            }
+            .xs-icon{
+                display: block;
+            }
+        }
     }
 }
+
+
 
 @mixin myfooter{
     footer{
@@ -130,8 +162,8 @@
                     width: 50%;
                     .contactdiv{
                         display: flex;
-                        justify-content: center;
-                        column-gap: 30px;
+                        justify-content: space-around;
+                        
                         .leftdiv{
                             display: flex;
                             flex-direction: column;
@@ -253,6 +285,90 @@
                         font-style: normal;
                         font-weight: 400;
                         line-height: normal;
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 391px) {
+        footer{
+            .padding{
+                justify-content: space-evenly;
+                padding: 16px 12px;
+                .upper{
+                    .left{
+                        h1{
+                            font-size: 12px;
+                        }
+                        .group{
+                            margin-left: 9px;
+                            img{
+                                width: 26px;
+                                height: 26px;
+                            }
+                            h2{
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                    .right{
+                        img{
+                            width: 18px;
+                            height: 18px;
+                        }
+                    }
+                }
+                .middle{
+                    .left{
+                        display: none;
+                    }
+                    .right{
+                        width: 100%;
+                        .contactdiv{
+                            display: flex;
+                            justify-content: space-between;
+                            .leftdiv{
+                                .upperdiv{
+                                    .line{
+                                        width: 150px;
+                                    }
+                                }
+                                .lowerdiv{
+                                    h1{
+                                        font-size: 18px;
+                                    }
+                                }
+                            }
+                            .rightdiv{
+                                .upperdiv{
+                                    .line{
+                                        width: 150px;
+                                    }
+                                }
+                                .lowerdiv{
+                                    h1{
+                                        font-size: 18px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .lower{
+                    .left{
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        .group1,.group2{
+                            display: flex;
+                            align-items: center;
+                            column-gap: 5px;
+                            max-width: 50%;
+                            justify-content: space-between;
+                        }
+                    }
+                    .right{
+                        display: none;
                     }
                 }
             }
