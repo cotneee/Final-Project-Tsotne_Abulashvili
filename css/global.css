@@ -1169,6 +1169,82 @@ header .xs-icon {
   width: 70%;
 }
 
+@media (max-width: 390px) {
+  .container2 .main .info h1 {
+    color: #FFF;
+    text-align: center;
+    font-family: Judson;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .container2 .product {
+    padding-bottom: 42px;
+    margin-top: 42px;
+    row-gap: 60px;
+  }
+  .container2 .product .name h1 {
+    color: #000;
+    font-family: "Kaisei Decol";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .container2 .product .mother {
+    row-gap: 20px;
+  }
+  .container2 .product .mother .child1 {
+    border: solid 1px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 10px 0;
+  }
+  .container2 .product .mother .child1 .circle {
+    width: 120px;
+    height: 120px;
+  }
+  .container2 .product .mother .child1 .circle h1 {
+    color: #FFF;
+    font-family: "Kaisei Decol";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .container2 .product .mother .child1 h1 {
+    color: #000;
+    width: 325px;
+    text-align: center;
+    font-family: "Kaisei Decol";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .container2 .aboutus {
+    position: relative;
+    height: 297px;
+  }
+  .container2 .aboutus .leftside h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    color: #FFF;
+    text-align: center;
+    font-family: Kadwa;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .container2 .aboutus .leftside h2 {
+    display: none;
+  }
+}
 footer {
   background-color: rgb(228, 228, 228);
   width: 100%;
