@@ -58,7 +58,7 @@
       display: none;
     }
   }
-  @media (max-width: 391px) {
+  @media (max-width: 390px) {
     header {
       justify-content: space-between;
       height: 62px;
@@ -192,12 +192,17 @@
                 row-gap: 9px;
                 h1 {
                   color: #000;
-
                   font-family: Kameron;
                   font-size: 20px;
                   font-style: normal;
                   font-weight: 400;
                   line-height: normal;
+
+                  @media (max-width: 391px) {
+                    &:nth-child(2) {
+                      width: 168px;
+                    }
+                  }
                 }
               }
             }
@@ -299,8 +304,9 @@
       }
     }
   }
-  @media (max-width: 391px) {
+  @media (max-width: 390px) {
     footer {
+      height: 348px;
       .padding {
         justify-content: space-evenly;
         padding: 16px 12px;
