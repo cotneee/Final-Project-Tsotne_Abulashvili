@@ -45,7 +45,7 @@
   }
 }
 
-@media (max-width: 391px) {
+@media (max-width: 390px) {
   .main {
     display: flex;
     justify-content: center;
@@ -149,7 +149,7 @@
   }
 }
 
-@media (max-width: 391px) {
+@media (max-width: 390px) {
   .product {
     margin-top: 42px;
     row-gap: 40px;
@@ -230,7 +230,7 @@
   }
 }
 
-@media (max-width: 391px) {
+@media (max-width: 390px) {
   .lastsection {
     display: flex;
     justify-content: center;
@@ -284,7 +284,7 @@
   }
 }
 
-@media (max-width: 391px) {
+@media (max-width: 390px) {
   .pseudofooter {
     height: 137px;
     h1 {
@@ -309,9 +309,10 @@
 @include mymixin;
 .container2{
     .main{
-        background-image: url("../imgs/131723.webp");
+        background-image: url("../imgs/mountain_landscape_nature_16-wallpaper-1600x600.jpg");
         display: flex;
         justify-content: center;
+        background-position: center bottom;
         align-items: center;
         font-size: 75px;
     }
@@ -324,14 +325,6 @@
         row-gap: 113px;
         justify-content: space-around;
         padding-bottom: 100px;
-        .name{
-            .line2{
-
-            }
-            h1{
-
-            }
-        }
         .mother{
             display: flex;
             justify-content: space-around;
@@ -493,6 +486,229 @@
             }
         }
     }
+}
+
+@include myfooter;
+
+
+// page end;
+
+@include mymixin;
+
+.container3{
+  .main{
+    background-image: url("../imgs/mountaintop.jpg");
+    display:  flex;
+    justify-content: center;
+    background-position: center;
+    align-items: center;
+    h1{
+      width: 684px;
+      color: #fff;
+      text-shadow: 4px 4px rgba(0, 0, 0, 0.20);
+      text-align: center;
+      font-family: judson;
+      font-size: 70px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      @media (max-width:390px) {
+        font-size: 40px;
+      }
+    }
+  }
+  .abtproduct{
+    padding: 0 82px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    @media (max-width:390px) {
+      margin-top: 42px;
+      padding: 0 10px;
+      margin-bottom: 25px;
+    }
+    .parent{
+      display: flex;
+      justify-content: space-around;
+      @media (max-width:390px) {
+        justify-content: space-between;
+      }
+      .imgdiv{
+        @media (max-width:390px) {
+          margin-top: 90px;
+        }
+        
+        img{
+          border-radius: 5px;
+          @media (max-width:390px) {
+            width: 169px;
+            align-self: flex-start;
+            height: 169px;
+          }
+        }
+      }
+      .rightsideinfo{
+        width: 582px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 17px;
+        @media (max-width:390px) {
+          width: 140px;
+          row-gap: 7px;
+        }
+        h1{
+          color: #000;
+          font-family: Kaushan Script;
+          font-size: 64px;
+          font-style: normal;
+          font-weight:100;
+          line-height: normal;
+          @media (max-width:390px) {
+            color: #000;
+
+            font-family: Metal;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+          }
+        }
+        h2{
+          color: #000;
+          font-family: JejuMyeongjo;
+          font-size: 40px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;        
+          @media (max-width:390px) {
+            color: #000;
+            font-family: JejuMyeongjo;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            
+          }  
+        }
+        h3{
+          color: #000;
+          font-family: Kameron;
+          font-size: 25px;
+          
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          @media (max-width:390px) {
+            color: #000;
+            
+            font-family: Kameron;
+            font-size: 13px;
+            font-style: italic;
+            font-weight: 400;
+            line-height: normal;
+          }
+        }
+        h4{
+          color: #000;
+
+          font-family: JejuMyeongjo;
+          font-size: 30px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          @media (max-width:390px) {
+            color: #000;
+
+            font-family: JejuMyeongjo;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+          }
+        }
+        h5{
+          color: #000;
+
+          font-family: JejuMyeongjo;
+          font-size: 30px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          @media (max-width:390px) {
+            color: #000;
+
+            font-family: JejuMyeongjo;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+          }
+        }
+        input{
+          width: 100px;
+          height: 60px;
+          padding: 0 30px;
+          border: 1px solid black;
+          border-radius: 6px;
+          font-size: 30px;
+          @media (max-width:390px) {
+            width: 53.829px;
+            height: 29.715px;
+          }
+        }
+        .child3{
+          display: flex;
+          align-items: center;
+          column-gap: 10px;
+          @media (max-width:390px) {
+            display: none;
+          }
+          button{
+            border-radius: 20px;
+            background: #24253C;
+            width: 426.617px;
+            height: 76px;
+            flex-shrink: 0; 
+            color: #FFF;
+
+            font-family: Jomolhari;
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+           
+          }
+          svg{
+            width: 55px;
+            height: 55px;
+            @media (max-width:390px) {
+            
+            }
+          }
+        }
+      }
+    }
+  }
+  .buy{
+    display: none;
+    @media (max-width:390px) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 42px;
+    }
+    button{
+      width: 80%;
+      border-radius: 20px;
+      background: #24253C;
+      color: #FFF;
+
+      font-family: Jomolhari;
+      font-size: 10px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
 }
 
 @include myfooter;
