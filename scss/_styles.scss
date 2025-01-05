@@ -9,7 +9,7 @@
   background-repeat: no-repeat;
   padding: 0 80px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   .first {
     transform: rotate(180deg);
@@ -33,6 +33,7 @@
     button {
       cursor: pointer;
       width: 127px;
+      font-size: large;
       height: 48px;
       border: none;
       color: #fff;
@@ -136,7 +137,7 @@
     width: 235px;
     height: 60px;
     border-radius: 5px;
-    background: rgb(11, 37, 56);
+    background: rgb(13, 59, 94);
     font-family: JejuMyeongjo;
     font-size: 32px;
     font-style: normal;
@@ -144,7 +145,7 @@
     line-height: normal;
     border: none;
     &:hover {
-      background-color: rgb(13, 36, 53);
+      background-color: rgb(11, 37, 56);
     }
   }
 }
@@ -214,7 +215,7 @@
       height: 60px;
       flex-shrink: 0;
       border-radius: 5px;
-      background: #19364a;
+      background: rgb(13, 59, 94);
       color: #fff;
 
       font-family: Jomolhari;
@@ -224,7 +225,7 @@
       line-height: normal;
       border: none;
       &:hover {
-        background-color: #142b3a;
+        background-color: rgb(11, 37, 56);
       }
     }
   }
@@ -643,16 +644,19 @@
             line-height: normal;
           }
         }
-        input{
-          width: 100px;
-          height: 60px;
-          padding: 0 30px;
-          border: 1px solid black;
-          border-radius: 6px;
-          font-size: 30px;
-          @media (max-width:390px) {
-            width: 53.829px;
-            height: 29.715px;
+        .input{
+          input{
+            width: 100px;
+            height: 60px;
+            padding: 0 30px;
+            border: 1px solid black;
+            border-radius: 6px;
+            font-size: 30px;
+            @media (max-width:390px) {
+              width: 54px;
+              height: 30px;
+              font-size: 16px;
+            }
           }
         }
         .child3{
@@ -664,22 +668,25 @@
           }
           button{
             border-radius: 20px;
-            background: #24253C;
+            background: rgb(13, 59, 94);
             width: 426.617px;
             height: 76px;
             flex-shrink: 0; 
             color: #FFF;
-
+            cursor: pointer;
             font-family: Jomolhari;
             font-size: 36px;
             font-style: normal;
             font-weight: 400;
             line-height: normal;
-           
+            &:hover {
+              background-color: rgb(11, 37, 56);
+            }
           }
           svg{
             width: 55px;
             height: 55px;
+            cursor: pointer;
             @media (max-width:390px) {
             
             }
@@ -699,14 +706,23 @@
     button{
       width: 80%;
       border-radius: 20px;
-      background: #24253C;
+      background: rgb(13, 59, 94);
+      height: 30px;
       color: #FFF;
-
+      &:hover {
+        background-color: rgb(11, 37, 56);
+      }
+      cursor: pointer;
       font-family: Jomolhari;
-      font-size: 10px;
+      font-size: 15px;
       font-style: normal;
       font-weight: 400;
       line-height: normal;
+    }
+    svg{
+      cursor: pointer;
+      width: 30px;
+      height: 30px
     }
   }
 }

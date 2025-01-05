@@ -185,9 +185,9 @@ header .xs-icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -223,6 +223,7 @@ header .xs-icon {
 .main .info button {
   cursor: pointer;
   width: 127px;
+  font-size: large;
   height: 48px;
   border: none;
   color: #fff;
@@ -351,7 +352,7 @@ header .xs-icon {
   width: 235px;
   height: 60px;
   border-radius: 5px;
-  background: rgb(11, 37, 56);
+  background: rgb(13, 59, 94);
   font-family: JejuMyeongjo;
   font-size: 32px;
   font-style: normal;
@@ -360,7 +361,7 @@ header .xs-icon {
   border: none;
 }
 .product button:hover {
-  background-color: rgb(13, 36, 53);
+  background-color: rgb(11, 37, 56);
 }
 
 @media (max-width: 390px) {
@@ -436,7 +437,7 @@ header .xs-icon {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   border-radius: 5px;
-  background: #19364a;
+  background: rgb(13, 59, 94);
   color: #fff;
   font-family: Jomolhari;
   font-size: 25px;
@@ -446,7 +447,7 @@ header .xs-icon {
   border: none;
 }
 .lastsection div button:hover {
-  background-color: #142b3a;
+  background-color: rgb(11, 37, 56);
 }
 
 @media (max-width: 390px) {
@@ -797,6 +798,7 @@ footer .padding .lower .right input {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   border-radius: 12px;
+  padding: 0 0 0 12px;
   border: 1px solid #000;
   background: #fff;
 }
@@ -842,13 +844,17 @@ footer .padding .lower .right input::placeholder {
 }
 footer .padding .lower .right button {
   border-radius: 12px;
-  background: #273a47;
+  background: rgb(13, 59, 94);
   color: #fff;
   font-family: Karma;
+  cursor: pointer;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+footer .padding .lower .right button:hover {
+  background-color: rgb(11, 37, 56);
 }
 
 @media (max-width: 390px) {
@@ -1526,6 +1532,7 @@ footer .padding .lower .right input {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   border-radius: 12px;
+  padding: 0 0 0 12px;
   border: 1px solid #000;
   background: #fff;
 }
@@ -1571,13 +1578,17 @@ footer .padding .lower .right input::placeholder {
 }
 footer .padding .lower .right button {
   border-radius: 12px;
-  background: #273a47;
+  background: rgb(13, 59, 94);
   color: #fff;
   font-family: Karma;
+  cursor: pointer;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+footer .padding .lower .right button:hover {
+  background-color: rgb(11, 37, 56);
 }
 
 @media (max-width: 390px) {
@@ -1952,7 +1963,7 @@ header .xs-icon {
     line-height: normal;
   }
 }
-.container3 .abtproduct .parent .rightsideinfo input {
+.container3 .abtproduct .parent .rightsideinfo .input input {
   width: 100px;
   height: 60px;
   padding: 0 30px;
@@ -1961,9 +1972,10 @@ header .xs-icon {
   font-size: 30px;
 }
 @media (max-width: 390px) {
-  .container3 .abtproduct .parent .rightsideinfo input {
-    width: 53.829px;
-    height: 29.715px;
+  .container3 .abtproduct .parent .rightsideinfo .input input {
+    width: 54px;
+    height: 30px;
+    font-size: 16px;
   }
 }
 .container3 .abtproduct .parent .rightsideinfo .child3 {
@@ -1984,21 +1996,26 @@ header .xs-icon {
 }
 .container3 .abtproduct .parent .rightsideinfo .child3 button {
   border-radius: 20px;
-  background: #24253C;
+  background: rgb(13, 59, 94);
   width: 426.617px;
   height: 76px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
   color: #FFF;
+  cursor: pointer;
   font-family: Jomolhari;
   font-size: 36px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
+.container3 .abtproduct .parent .rightsideinfo .child3 button:hover {
+  background-color: rgb(11, 37, 56);
+}
 .container3 .abtproduct .parent .rightsideinfo .child3 svg {
   width: 55px;
   height: 55px;
+  cursor: pointer;
 }
 .container3 .buy {
   display: none;
@@ -2020,13 +2037,23 @@ header .xs-icon {
 .container3 .buy button {
   width: 80%;
   border-radius: 20px;
-  background: #24253C;
+  background: rgb(13, 59, 94);
+  height: 30px;
   color: #FFF;
+  cursor: pointer;
   font-family: Jomolhari;
-  font-size: 10px;
+  font-size: 15px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+.container3 .buy button:hover {
+  background-color: rgb(11, 37, 56);
+}
+.container3 .buy svg {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
 }
 
 footer {
@@ -2299,6 +2326,7 @@ footer .padding .lower .right input {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   border-radius: 12px;
+  padding: 0 0 0 12px;
   border: 1px solid #000;
   background: #fff;
 }
@@ -2344,13 +2372,17 @@ footer .padding .lower .right input::placeholder {
 }
 footer .padding .lower .right button {
   border-radius: 12px;
-  background: #273a47;
+  background: rgb(13, 59, 94);
   color: #fff;
   font-family: Karma;
+  cursor: pointer;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+footer .padding .lower .right button:hover {
+  background-color: rgb(11, 37, 56);
 }
 
 @media (max-width: 390px) {

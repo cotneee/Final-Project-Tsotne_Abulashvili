@@ -279,6 +279,7 @@
             height: 40px;
             flex-shrink: 0;
             border-radius: 12px;
+            padding: 0 0 0 12px;
             border: 1px solid #000;
             background: #fff;
             &::placeholder {
@@ -293,13 +294,17 @@
           }
           button {
             border-radius: 12px;
-            background: #273a47;
+            background: rgb(13, 59, 94);
             color: #fff;
             font-family: Karma;
+            cursor: pointer;
             font-size: 18px;
             font-style: normal;
             font-weight: 400;
             line-height: normal;
+            &:hover {
+              background-color: rgb(11, 37, 56);
+            }
           }
         }
       }
