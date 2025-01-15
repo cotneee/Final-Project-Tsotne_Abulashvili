@@ -84,6 +84,14 @@ header .logo {
       -ms-flex-align: center;
           align-items: center;
 }
+header .logo img {
+  border-radius: 0px;
+}
+header .logo img:hover {
+  background-color: rgb(247, 247, 247);
+  border-radius: 8px;
+  cursor: pointer;
+}
 header .logo .line {
   width: 1px;
   height: 40px;
@@ -96,6 +104,10 @@ header .logo h1 {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+header .logo h1:hover {
+  color: rgb(68, 68, 68);
+  cursor: pointer;
 }
 header nav {
   display: -webkit-box;
@@ -113,6 +125,10 @@ header nav h2 {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+header nav h2:hover {
+  color: rgb(68, 68, 68);
+  cursor: pointer;
 }
 header .search {
   display: -webkit-box;
@@ -133,6 +149,14 @@ header .search input {
   background: rgba(217, 217, 217, 0.5);
   padding-left: 10px;
 }
+header .search img {
+  cursor: pointer;
+}
+header .search img:hover {
+  background-color: rgb(247, 247, 247);
+  border-radius: 8px;
+  cursor: pointer;
+}
 header .icons {
   width: 100px;
   display: -webkit-box;
@@ -141,6 +165,11 @@ header .icons {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+header .icons img:hover {
+  background-color: rgb(247, 247, 247);
+  border-radius: 8px;
+  cursor: pointer;
 }
 header .xs-icon {
   display: none;
@@ -345,6 +374,11 @@ header .xs-icon {
 .product .goods .child img {
   width: 240px;
   height: 240px;
+}
+.product .goods .child img:hover {
+  background-color: rgba(173, 173, 173, 0.295);
+  border-radius: 15px;
+  cursor: pointer;
 }
 .product button {
   cursor: pointer;
@@ -581,6 +615,11 @@ footer .padding .upper .left .group img {
   width: 40px;
   height: 40px;
 }
+footer .padding .upper .left .group img:hover {
+  background-color: rgb(247, 247, 247);
+  border-radius: 8px;
+  cursor: pointer;
+}
 footer .padding .upper .left .group a h2 {
   color: #000;
   font-family: "Kaisei Decol";
@@ -604,6 +643,11 @@ footer .padding .upper .right {
   -webkit-column-gap: 20px;
      -moz-column-gap: 20px;
           column-gap: 20px;
+}
+footer .padding .upper .right img:hover {
+  background-color: rgb(247, 247, 247);
+  border-radius: 8px;
+  cursor: pointer;
 }
 footer .padding .middle {
   display: -webkit-box;
@@ -633,6 +677,10 @@ footer .padding .middle .left h1 {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+footer .padding .middle .left h1:hover {
+  color: rgb(68, 68, 68);
+  cursor: pointer;
 }
 footer .padding .middle .right {
   width: 50%;
@@ -687,6 +735,10 @@ footer .padding .middle .right .contactdiv .leftdiv .lowerdiv h1 {
   font-weight: 400;
   line-height: normal;
 }
+footer .padding .middle .right .contactdiv .leftdiv .lowerdiv h1:hover {
+  color: rgb(68, 68, 68);
+  cursor: pointer;
+}
 @media (max-width: 391px) {
   footer .padding .middle .right .contactdiv .leftdiv .lowerdiv h1:nth-child(2) {
     width: 168px;
@@ -734,6 +786,10 @@ footer .padding .middle .right .contactdiv .rightdiv .lowerdiv h1 {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+footer .padding .middle .right .contactdiv .rightdiv .lowerdiv h1:hover {
+  color: rgb(68, 68, 68);
+  cursor: pointer;
 }
 footer .padding .lower {
   display: -webkit-box;
@@ -962,6 +1018,14 @@ header .logo {
       -ms-flex-align: center;
           align-items: center;
 }
+header .logo img {
+  border-radius: 0px;
+}
+header .logo img:hover {
+  background-color: rgb(247, 247, 247);
+  border-radius: 8px;
+  cursor: pointer;
+}
 header .logo .line {
   width: 1px;
   height: 40px;
@@ -974,6 +1038,10 @@ header .logo h1 {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+header .logo h1:hover {
+  color: rgb(68, 68, 68);
+  cursor: pointer;
 }
 header nav {
   display: -webkit-box;
@@ -991,6 +1059,10 @@ header nav h2 {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+header nav h2:hover {
+  color: rgb(68, 68, 68);
+  cursor: pointer;
 }
 header .search {
   display: -webkit-box;
@@ -1011,6 +1083,14 @@ header .search input {
   background: rgba(217, 217, 217, 0.5);
   padding-left: 10px;
 }
+header .search img {
+  cursor: pointer;
+}
+header .search img:hover {
+  background-color: rgb(247, 247, 247);
+  border-radius: 8px;
+  cursor: pointer;
+}
 header .icons {
   width: 100px;
   display: -webkit-box;
@@ -1019,6 +1099,11 @@ header .icons {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+header .icons img:hover {
+  background-color: rgb(247, 247, 247);
+  border-radius: 8px;
+  cursor: pointer;
 }
 header .xs-icon {
   display: none;
@@ -1315,6 +1400,11 @@ footer .padding .upper .left .group img {
   width: 40px;
   height: 40px;
 }
+footer .padding .upper .left .group img:hover {
+  background-color: rgb(247, 247, 247);
+  border-radius: 8px;
+  cursor: pointer;
+}
 footer .padding .upper .left .group a h2 {
   color: #000;
   font-family: "Kaisei Decol";
@@ -1338,6 +1428,11 @@ footer .padding .upper .right {
   -webkit-column-gap: 20px;
      -moz-column-gap: 20px;
           column-gap: 20px;
+}
+footer .padding .upper .right img:hover {
+  background-color: rgb(247, 247, 247);
+  border-radius: 8px;
+  cursor: pointer;
 }
 footer .padding .middle {
   display: -webkit-box;
@@ -1367,6 +1462,10 @@ footer .padding .middle .left h1 {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+footer .padding .middle .left h1:hover {
+  color: rgb(68, 68, 68);
+  cursor: pointer;
 }
 footer .padding .middle .right {
   width: 50%;
@@ -1421,6 +1520,10 @@ footer .padding .middle .right .contactdiv .leftdiv .lowerdiv h1 {
   font-weight: 400;
   line-height: normal;
 }
+footer .padding .middle .right .contactdiv .leftdiv .lowerdiv h1:hover {
+  color: rgb(68, 68, 68);
+  cursor: pointer;
+}
 @media (max-width: 391px) {
   footer .padding .middle .right .contactdiv .leftdiv .lowerdiv h1:nth-child(2) {
     width: 168px;
@@ -1468,6 +1571,10 @@ footer .padding .middle .right .contactdiv .rightdiv .lowerdiv h1 {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+footer .padding .middle .right .contactdiv .rightdiv .lowerdiv h1:hover {
+  color: rgb(68, 68, 68);
+  cursor: pointer;
 }
 footer .padding .lower {
   display: -webkit-box;
@@ -1696,6 +1803,14 @@ header .logo {
       -ms-flex-align: center;
           align-items: center;
 }
+header .logo img {
+  border-radius: 0px;
+}
+header .logo img:hover {
+  background-color: rgb(247, 247, 247);
+  border-radius: 8px;
+  cursor: pointer;
+}
 header .logo .line {
   width: 1px;
   height: 40px;
@@ -1708,6 +1823,10 @@ header .logo h1 {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+header .logo h1:hover {
+  color: rgb(68, 68, 68);
+  cursor: pointer;
 }
 header nav {
   display: -webkit-box;
@@ -1725,6 +1844,10 @@ header nav h2 {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+header nav h2:hover {
+  color: rgb(68, 68, 68);
+  cursor: pointer;
 }
 header .search {
   display: -webkit-box;
@@ -1745,6 +1868,14 @@ header .search input {
   background: rgba(217, 217, 217, 0.5);
   padding-left: 10px;
 }
+header .search img {
+  cursor: pointer;
+}
+header .search img:hover {
+  background-color: rgb(247, 247, 247);
+  border-radius: 8px;
+  cursor: pointer;
+}
 header .icons {
   width: 100px;
   display: -webkit-box;
@@ -1753,6 +1884,11 @@ header .icons {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+header .icons img:hover {
+  background-color: rgb(247, 247, 247);
+  border-radius: 8px;
+  cursor: pointer;
 }
 header .xs-icon {
   display: none;
@@ -2109,6 +2245,11 @@ footer .padding .upper .left .group img {
   width: 40px;
   height: 40px;
 }
+footer .padding .upper .left .group img:hover {
+  background-color: rgb(247, 247, 247);
+  border-radius: 8px;
+  cursor: pointer;
+}
 footer .padding .upper .left .group a h2 {
   color: #000;
   font-family: "Kaisei Decol";
@@ -2132,6 +2273,11 @@ footer .padding .upper .right {
   -webkit-column-gap: 20px;
      -moz-column-gap: 20px;
           column-gap: 20px;
+}
+footer .padding .upper .right img:hover {
+  background-color: rgb(247, 247, 247);
+  border-radius: 8px;
+  cursor: pointer;
 }
 footer .padding .middle {
   display: -webkit-box;
@@ -2161,6 +2307,10 @@ footer .padding .middle .left h1 {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+footer .padding .middle .left h1:hover {
+  color: rgb(68, 68, 68);
+  cursor: pointer;
 }
 footer .padding .middle .right {
   width: 50%;
@@ -2215,6 +2365,10 @@ footer .padding .middle .right .contactdiv .leftdiv .lowerdiv h1 {
   font-weight: 400;
   line-height: normal;
 }
+footer .padding .middle .right .contactdiv .leftdiv .lowerdiv h1:hover {
+  color: rgb(68, 68, 68);
+  cursor: pointer;
+}
 @media (max-width: 391px) {
   footer .padding .middle .right .contactdiv .leftdiv .lowerdiv h1:nth-child(2) {
     width: 168px;
@@ -2262,6 +2416,10 @@ footer .padding .middle .right .contactdiv .rightdiv .lowerdiv h1 {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+footer .padding .middle .right .contactdiv .rightdiv .lowerdiv h1:hover {
+  color: rgb(68, 68, 68);
+  cursor: pointer;
 }
 footer .padding .lower {
   display: -webkit-box;
