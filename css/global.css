@@ -73,6 +73,18 @@ header {
           align-items: center;
   width: 100%;
 }
+header .qart {
+  color: rgb(62, 62, 148);
+  font-family: "Courier New", Courier, monospace;
+  font-size: large;
+  font-weight: bold;
+}
+header .selch {
+  color: rgb(148, 62, 62);
+  font-family: "Courier New", Courier, monospace;
+  font-size: large;
+  font-weight: bold;
+}
 header .logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -85,7 +97,9 @@ header .logo {
           align-items: center;
 }
 header .logo img {
-  border-radius: 0px;
+  border-radius: 5px;
+  width: 45px;
+  height: 45px;
 }
 header .logo img:hover {
   background-color: rgb(247, 247, 247);
@@ -165,6 +179,13 @@ header .icons {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-column-gap: 15px;
+     -moz-column-gap: 15px;
+          column-gap: 15px;
+}
+header .icons img {
+  width: 30px;
+  height: 30px;
 }
 header .icons img:hover {
   background-color: rgb(247, 247, 247);
@@ -175,7 +196,7 @@ header .xs-icon {
   display: none;
 }
 
-@media (max-width: 390px) {
+@media (max-width: 425px) {
   header {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -201,9 +222,12 @@ header .xs-icon {
   header .xs-icon {
     display: block;
   }
+  header .qart, header .selch {
+    display: none;
+  }
 }
 .main {
-  background-image: url("../imgs/q_70.jpg");
+  background-image: url("../imgs/noFilter.webp");
   background-position: center;
   width: 100%;
   background-size: cover;
@@ -263,7 +287,7 @@ header .xs-icon {
   background-color: rgb(77, 87, 65);
 }
 
-@media (max-width: 390px) {
+@media (max-width: 425px) {
   .main {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -372,8 +396,10 @@ header .xs-icon {
   line-height: normal;
 }
 .product .goods .child img {
-  width: 240px;
-  height: 240px;
+  width: 200px;
+  padding: 5px;
+  height: 200px;
+  border-radius: 10px;
 }
 .product .goods .child img:hover {
   background-color: rgba(173, 173, 173, 0.295);
@@ -398,13 +424,17 @@ header .xs-icon {
   background-color: rgb(11, 37, 56);
 }
 
-@media (max-width: 390px) {
+@media (max-width: 425px) {
   .product {
     margin-top: 42px;
     row-gap: 40px;
+    padding-bottom: 42px;
   }
   .product .name h1 {
     font-size: 32px;
+  }
+  .product .goods {
+    padding-bottom: 0;
   }
   .product .goods .child img {
     width: 199px;
@@ -425,11 +455,11 @@ header .xs-icon {
   }
 }
 .lastsection {
-  background-image: url("../imgs/Campfire-on-Steens-Mountain-hero-John-Waller.webp");
+  background-image: url("../imgs/cab3ce4f-f41d-4e93-8d05-d86d14a5336e.webp");
   width: 100%;
   height: 615px;
   background-repeat: no-repeat;
-  background-position: center bottom;
+  background-position: center top -90px;
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -455,8 +485,9 @@ header .xs-icon {
   row-gap: 30px;
 }
 .lastsection div h1 {
-  color: #fff;
+  color: rgb(255, 255, 255);
   width: 405px;
+  text-shadow: #000 2px 2px;
   text-align: center;
   font-family: Judson;
   font-size: 48px;
@@ -484,7 +515,7 @@ header .xs-icon {
   background-color: rgb(11, 37, 56);
 }
 
-@media (max-width: 390px) {
+@media (max-width: 425px) {
   .lastsection {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -493,9 +524,10 @@ header .xs-icon {
         -ms-flex-pack: center;
             justify-content: center;
     height: 268px;
+    background-position: center;
   }
   .lastsection div h1 {
-    color: #fff;
+    color: white;
     text-align: center;
     font-family: Judson;
     width: 169px;
@@ -535,7 +567,6 @@ header .xs-icon {
 }
 .pseudofooter h1 {
   width: 1140px;
-  height: 45px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
   color: #fff;
@@ -547,7 +578,7 @@ header .xs-icon {
   line-height: normal;
 }
 
-@media (max-width: 390px) {
+@media (max-width: 425px) {
   .pseudofooter {
     height: 137px;
   }
@@ -565,7 +596,7 @@ header .xs-icon {
 footer {
   background-color: rgb(228, 228, 228);
   width: 100%;
-  height: 430px;
+  height: 400px;
 }
 footer .padding {
   padding: 26px 50px;
@@ -614,6 +645,7 @@ footer .padding .upper .left .group {
 footer .padding .upper .left .group img {
   width: 40px;
   height: 40px;
+  border-radius: 6px;
 }
 footer .padding .upper .left .group img:hover {
   background-color: rgb(247, 247, 247);
@@ -643,6 +675,10 @@ footer .padding .upper .right {
   -webkit-column-gap: 20px;
      -moz-column-gap: 20px;
           column-gap: 20px;
+}
+footer .padding .upper .right img {
+  width: 30px;
+  height: 30px;
 }
 footer .padding .upper .right img:hover {
   background-color: rgb(247, 247, 247);
@@ -739,7 +775,7 @@ footer .padding .middle .right .contactdiv .leftdiv .lowerdiv h1:hover {
   color: rgb(68, 68, 68);
   cursor: pointer;
 }
-@media (max-width: 391px) {
+@media (max-width: 425px) {
   footer .padding .middle .right .contactdiv .leftdiv .lowerdiv h1:nth-child(2) {
     width: 168px;
   }
@@ -913,7 +949,7 @@ footer .padding .lower .right button:hover {
   background-color: rgb(11, 37, 56);
 }
 
-@media (max-width: 390px) {
+@media (max-width: 425px) {
   footer {
     height: 348px;
   }
@@ -1007,6 +1043,18 @@ header {
           align-items: center;
   width: 100%;
 }
+header .qart {
+  color: rgb(62, 62, 148);
+  font-family: "Courier New", Courier, monospace;
+  font-size: large;
+  font-weight: bold;
+}
+header .selch {
+  color: rgb(148, 62, 62);
+  font-family: "Courier New", Courier, monospace;
+  font-size: large;
+  font-weight: bold;
+}
 header .logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1019,7 +1067,9 @@ header .logo {
           align-items: center;
 }
 header .logo img {
-  border-radius: 0px;
+  border-radius: 5px;
+  width: 45px;
+  height: 45px;
 }
 header .logo img:hover {
   background-color: rgb(247, 247, 247);
@@ -1099,6 +1149,13 @@ header .icons {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-column-gap: 15px;
+     -moz-column-gap: 15px;
+          column-gap: 15px;
+}
+header .icons img {
+  width: 30px;
+  height: 30px;
 }
 header .icons img:hover {
   background-color: rgb(247, 247, 247);
@@ -1109,7 +1166,7 @@ header .xs-icon {
   display: none;
 }
 
-@media (max-width: 390px) {
+@media (max-width: 425px) {
   header {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -1134,6 +1191,9 @@ header .xs-icon {
   }
   header .xs-icon {
     display: block;
+  }
+  header .qart, header .selch {
+    display: none;
   }
 }
 .container2 .main {
@@ -1271,7 +1331,7 @@ header .xs-icon {
   width: 70%;
 }
 
-@media (max-width: 390px) {
+@media (max-width: 425px) {
   .container2 .main .info h1 {
     color: #FFF;
     text-align: center;
@@ -1350,7 +1410,7 @@ header .xs-icon {
 footer {
   background-color: rgb(228, 228, 228);
   width: 100%;
-  height: 430px;
+  height: 400px;
 }
 footer .padding {
   padding: 26px 50px;
@@ -1399,6 +1459,7 @@ footer .padding .upper .left .group {
 footer .padding .upper .left .group img {
   width: 40px;
   height: 40px;
+  border-radius: 6px;
 }
 footer .padding .upper .left .group img:hover {
   background-color: rgb(247, 247, 247);
@@ -1428,6 +1489,10 @@ footer .padding .upper .right {
   -webkit-column-gap: 20px;
      -moz-column-gap: 20px;
           column-gap: 20px;
+}
+footer .padding .upper .right img {
+  width: 30px;
+  height: 30px;
 }
 footer .padding .upper .right img:hover {
   background-color: rgb(247, 247, 247);
@@ -1524,7 +1589,7 @@ footer .padding .middle .right .contactdiv .leftdiv .lowerdiv h1:hover {
   color: rgb(68, 68, 68);
   cursor: pointer;
 }
-@media (max-width: 391px) {
+@media (max-width: 425px) {
   footer .padding .middle .right .contactdiv .leftdiv .lowerdiv h1:nth-child(2) {
     width: 168px;
   }
@@ -1698,7 +1763,7 @@ footer .padding .lower .right button:hover {
   background-color: rgb(11, 37, 56);
 }
 
-@media (max-width: 390px) {
+@media (max-width: 425px) {
   footer {
     height: 348px;
   }
@@ -1792,6 +1857,18 @@ header {
           align-items: center;
   width: 100%;
 }
+header .qart {
+  color: rgb(62, 62, 148);
+  font-family: "Courier New", Courier, monospace;
+  font-size: large;
+  font-weight: bold;
+}
+header .selch {
+  color: rgb(148, 62, 62);
+  font-family: "Courier New", Courier, monospace;
+  font-size: large;
+  font-weight: bold;
+}
 header .logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1804,7 +1881,9 @@ header .logo {
           align-items: center;
 }
 header .logo img {
-  border-radius: 0px;
+  border-radius: 5px;
+  width: 45px;
+  height: 45px;
 }
 header .logo img:hover {
   background-color: rgb(247, 247, 247);
@@ -1884,6 +1963,13 @@ header .icons {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-column-gap: 15px;
+     -moz-column-gap: 15px;
+          column-gap: 15px;
+}
+header .icons img {
+  width: 30px;
+  height: 30px;
 }
 header .icons img:hover {
   background-color: rgb(247, 247, 247);
@@ -1894,7 +1980,7 @@ header .xs-icon {
   display: none;
 }
 
-@media (max-width: 390px) {
+@media (max-width: 425px) {
   header {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -1919,6 +2005,9 @@ header .xs-icon {
   }
   header .xs-icon {
     display: block;
+  }
+  header .qart, header .selch {
+    display: none;
   }
 }
 .container3 .main {
@@ -1945,7 +2034,7 @@ header .xs-icon {
   font-weight: 700;
   line-height: normal;
 }
-@media (max-width: 390px) {
+@media (max-width: 425px) {
   .container3 .main h1 {
     font-size: 40px;
   }
@@ -1955,7 +2044,7 @@ header .xs-icon {
   margin-top: 100px;
   margin-bottom: 100px;
 }
-@media (max-width: 390px) {
+@media (max-width: 425px) {
   .container3 .abtproduct {
     margin-top: 42px;
     padding: 0 10px;
@@ -1969,14 +2058,14 @@ header .xs-icon {
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
-@media (max-width: 390px) {
+@media (max-width: 425px) {
   .container3 .abtproduct .parent {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
 }
-@media (max-width: 390px) {
+@media (max-width: 425px) {
   .container3 .abtproduct .parent .imgdiv {
     margin-top: 90px;
   }
@@ -1984,7 +2073,7 @@ header .xs-icon {
 .container3 .abtproduct .parent .imgdiv img {
   border-radius: 5px;
 }
-@media (max-width: 390px) {
+@media (max-width: 425px) {
   .container3 .abtproduct .parent .imgdiv img {
     width: 169px;
     -ms-flex-item-align: start;
@@ -2003,7 +2092,7 @@ header .xs-icon {
           flex-direction: column;
   row-gap: 17px;
 }
-@media (max-width: 390px) {
+@media (max-width: 425px) {
   .container3 .abtproduct .parent .rightsideinfo {
     width: 140px;
     row-gap: 7px;
@@ -2017,7 +2106,7 @@ header .xs-icon {
   font-weight: 100;
   line-height: normal;
 }
-@media (max-width: 390px) {
+@media (max-width: 425px) {
   .container3 .abtproduct .parent .rightsideinfo h1 {
     color: #000;
     font-family: Metal;
@@ -2035,7 +2124,7 @@ header .xs-icon {
   font-weight: 400;
   line-height: normal;
 }
-@media (max-width: 390px) {
+@media (max-width: 425px) {
   .container3 .abtproduct .parent .rightsideinfo h2 {
     color: #000;
     font-family: JejuMyeongjo;
@@ -2053,7 +2142,7 @@ header .xs-icon {
   font-weight: 400;
   line-height: normal;
 }
-@media (max-width: 390px) {
+@media (max-width: 425px) {
   .container3 .abtproduct .parent .rightsideinfo h3 {
     color: #000;
     font-family: Kameron;
@@ -2071,7 +2160,7 @@ header .xs-icon {
   font-weight: 400;
   line-height: normal;
 }
-@media (max-width: 390px) {
+@media (max-width: 425px) {
   .container3 .abtproduct .parent .rightsideinfo h4 {
     color: #000;
     font-family: JejuMyeongjo;
@@ -2089,7 +2178,7 @@ header .xs-icon {
   font-weight: 400;
   line-height: normal;
 }
-@media (max-width: 390px) {
+@media (max-width: 425px) {
   .container3 .abtproduct .parent .rightsideinfo h5 {
     color: #000;
     font-family: JejuMyeongjo;
@@ -2107,7 +2196,7 @@ header .xs-icon {
   border-radius: 6px;
   font-size: 30px;
 }
-@media (max-width: 390px) {
+@media (max-width: 425px) {
   .container3 .abtproduct .parent .rightsideinfo .input input {
     width: 54px;
     height: 30px;
@@ -2125,7 +2214,7 @@ header .xs-icon {
      -moz-column-gap: 10px;
           column-gap: 10px;
 }
-@media (max-width: 390px) {
+@media (max-width: 425px) {
   .container3 .abtproduct .parent .rightsideinfo .child3 {
     display: none;
   }
@@ -2156,7 +2245,7 @@ header .xs-icon {
 .container3 .buy {
   display: none;
 }
-@media (max-width: 390px) {
+@media (max-width: 425px) {
   .container3 .buy {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2195,7 +2284,7 @@ header .xs-icon {
 footer {
   background-color: rgb(228, 228, 228);
   width: 100%;
-  height: 430px;
+  height: 400px;
 }
 footer .padding {
   padding: 26px 50px;
@@ -2244,6 +2333,7 @@ footer .padding .upper .left .group {
 footer .padding .upper .left .group img {
   width: 40px;
   height: 40px;
+  border-radius: 6px;
 }
 footer .padding .upper .left .group img:hover {
   background-color: rgb(247, 247, 247);
@@ -2273,6 +2363,10 @@ footer .padding .upper .right {
   -webkit-column-gap: 20px;
      -moz-column-gap: 20px;
           column-gap: 20px;
+}
+footer .padding .upper .right img {
+  width: 30px;
+  height: 30px;
 }
 footer .padding .upper .right img:hover {
   background-color: rgb(247, 247, 247);
@@ -2369,7 +2463,7 @@ footer .padding .middle .right .contactdiv .leftdiv .lowerdiv h1:hover {
   color: rgb(68, 68, 68);
   cursor: pointer;
 }
-@media (max-width: 391px) {
+@media (max-width: 425px) {
   footer .padding .middle .right .contactdiv .leftdiv .lowerdiv h1:nth-child(2) {
     width: 168px;
   }
@@ -2543,7 +2637,7 @@ footer .padding .lower .right button:hover {
   background-color: rgb(11, 37, 56);
 }
 
-@media (max-width: 390px) {
+@media (max-width: 425px) {
   footer {
     height: 348px;
   }
